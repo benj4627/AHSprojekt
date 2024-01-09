@@ -25,6 +25,7 @@
 /* general styling  og typografi */
 body {
     font-family: 'Lato', sans-serif;
+    background-color: var(--shojiWhite);
 }
 
 h1 {
