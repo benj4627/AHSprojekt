@@ -179,7 +179,7 @@ ul {
 .entryPointAshiharaContainer{
     max-width: 400px;
     height: 250px; 
-    margin: 3rem auto;
+    margin: 4rem auto;
 }
 
 .entryPointAshihara {
@@ -235,3 +235,79 @@ ul {
     }
 }
 
+/* MØD INSTRUKTØRENE SLUT */
+
+/*  OM KLUBBEN */
+/* header */
+.omKlubbenBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/omKlubbenHero.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* main text */
+.klubbenTextContainer {
+    background-color: white;
+    margin-top: 4rem;
+    padding: 3rem 0;
+}
+
+.klubbenText {
+    max-width: 70ch;
+    margin: 0 auto;
+    padding: var(--largeSpacing);
+}
+
+.klubbenText p {
+    margin: 1rem 0;
+}
+
+
+/* entrypoint instruktører */
+.entryInstructorsContainer{
+    max-width: 400px;
+    height: 250px; 
+    margin: 4rem auto;
+}
+
+.entryInstructors {
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/entryPoints/EntryPointmoedinstruktorendeHeroDekstop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryInstructors:hover {
+    transform: scale(1.1);
+}
+
+.btnText {
+    color: var(--shojiWhite);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    .klubbenTextContainer {
+        padding: 4rem 0;
+        margin: 8rem 0;
+    }
+    
+    .klubbenText {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+/* om klubben færdig */
