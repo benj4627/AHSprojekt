@@ -42,7 +42,7 @@ h3 {
 }
 
 p {
-    font-weight: 100;
+    font-weight: 300;
     line-height: 150%;
     max-width: 70ch;
     font-size: 1.2rem;
@@ -143,3 +143,4 @@ ul {
     max-width: 700px;
     margin: 0 auto;
 }
+
