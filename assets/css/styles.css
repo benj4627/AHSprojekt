@@ -82,3 +82,55 @@ ul {
 
 /* Sub nav */
 
+
+
+
+/* footer  styles */
+
+.footerBackgroundColor {
+background-color: black;
+}
+
+footer {
+padding-block: var(--largeSpacing);
+width: 80%;
+margin: 0 auto;
+/* display: flex;
+justify-content: center;
+gap: var(--largeSpacing); */
+}
+
+.footercontent {
+   text-align: center;
+}
+
+footer .logo img {
+    width: 249px;
+    height: 100%;
+}
+
+footer i {
+    color: var(--shojiWhite);
+}
+
+footer p {
+color: var(--shojiWhite);
+font-weight: 300;
+font-size: .8em;
+}
+
+.footerFlex {
+    display: flex;
+    gap: var(--stndSpacing);
+}
+
+.kontaktInfo {
+    width: 249px;
+    margin:  auto;
+    padding: var(--stndSpacing);
+}
+.socials {
+    width: 249px;
+    margin:  auto;
+    padding-bottom: var(--stndSpacing);
+}
