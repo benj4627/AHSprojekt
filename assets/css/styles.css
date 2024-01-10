@@ -151,7 +151,7 @@ ul {
     display: grid;
     grid-gap: var(--largeSpacing);
     grid-template-columns: repeat(3, minmax(200px, 1fr));
-    max-width: 1900px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -185,7 +185,7 @@ ul {
 .entryPointAshihara {
     height: 100%;
     width: 100%;
-    background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/entryPoints/2omAshiharaDesktopEntryPoint.jpg);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/entryPoints/2omAshiharaDesktopEntryPoint.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -198,7 +198,7 @@ ul {
 }
 
 .entryPointAshihara:hover {
-    transform: scale(1.1)
+    transform: scale(1.1);
 }
 
 .btnText {
@@ -206,3 +206,31 @@ ul {
     font-weight: 800;
     font-size: 2rem;
 }
+
+/* media queries */
+/* KAN CHATTEN GØRE DET? */
+
+@media screen and (max-width: 1168px) {
+    .gridContianer {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .descriptInstructors {
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gridContianer {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        max-width: 390px;
+        margin: 0 auto;
+    }
+
+    .descriptInstructors {
+        max-width: 500px;
+    }
+}
+
