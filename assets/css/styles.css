@@ -208,8 +208,8 @@ ul {
 }
 
 /* media queries */
-/* KAN CHATTEN GØRE DET? */
 
+/* media query til tablet, 2 kolonner */
 @media screen and (max-width: 1168px) {
     .gridContianer {
         grid-template-columns: repeat(2, minmax(200px, 1fr));
@@ -222,6 +222,7 @@ ul {
     }
 }
 
+/* media query til mobil, 1 kolonne */
 @media screen and (max-width: 768px) {
     .gridContianer {
         grid-template-columns: repeat(1, minmax(200px, 1fr));
