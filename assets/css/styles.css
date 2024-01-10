@@ -45,11 +45,12 @@ p {
     font-weight: 100;
     line-height: 150%;
     max-width: 70ch;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+
 }
 
 .textCenter {
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -127,3 +128,18 @@ ul {
 
 /* Sub nav */
 
+/* instruktørene side */
+.instrukBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/moedinstruktorendeHeroDekstop.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.descriptInstructors {
+    padding: 3rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
