@@ -129,6 +129,8 @@ ul {
 /* Sub nav */
 
 /* instruktørene side */
+
+/* header, nav og intro tekst */
 .instrukBackgroundImg {
     height: 90vh;
     background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/moedinstruktorendeHeroDekstop.jpg);
@@ -140,7 +142,67 @@ ul {
 
 .descriptInstructors {
     padding: 3rem;
-    max-width: 700px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
+/* instruktører grid layout */
+.gridContianer {
+    display: grid;
+    grid-gap: var(--largeSpacing);
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+.cardContainer {
+    background: #7a7a7a13; 
+    border-radius: var(--borderRadius);
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: var(--largeSpacing);
+}
+
+
+.cardContainer img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: var(--borderRadius);
+}
+
+.cardText p {
+    font-size: 16px;
+    padding: 1.5rem;
+} 
+
+/* entry point */
+.entryPointAshiharaContainer{
+    max-width: 400px;
+    height: 250px; 
+    margin: 3rem auto;
+}
+
+.entryPointAshihara {
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/entryPoints/2omAshiharaDesktopEntryPoint.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryPointAshihara:hover {
+    transform: scale(1.1)
+}
+
+.btnText {
+    color: var(--shojiWhite);
+    font-weight: 800;
+    font-size: 2rem;
+}
