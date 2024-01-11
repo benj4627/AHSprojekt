@@ -73,12 +73,11 @@ ul {
     background-size: cover;
 }
 
-.heroTextContainer {
+.frontPageTextContainer{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 80vh;
     padding: var(--largeSpacing);
     color: var(--shojiWhite);
 }
