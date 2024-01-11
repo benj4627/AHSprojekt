@@ -129,6 +129,7 @@ ul {
 
 /* Sub nav */
 
+
 /* instruktørene side */
 
 /* header, nav og intro tekst */
@@ -318,3 +319,81 @@ ul {
     }
 }
 /* om klubben færdig */
+
+
+
+/* footer  styles */
+
+.footerBackgroundColor {
+background-color: black;
+}
+
+footer {
+padding-block: var(--largeSpacing);
+width: 80%;
+margin: 0 auto;
+/* display: flex;
+justify-content: center;
+gap: var(--largeSpacing); */
+}
+
+.footercontent {
+   text-align: center;
+}
+.footercontent i {
+   font-size: 2rem;
+   color: var(--shojiWhite);
+}
+
+/* footer .logo img {
+    width: 249px;
+    height: 100%;
+} */
+
+.logoWidth {
+    width: 249px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+
+footer p {
+color: var(--shojiWhite);
+font-weight: 600;
+font-size: .8em;
+}
+
+.footerFlex {
+    display: flex;
+    gap: var(--stndSpacing);
+}
+
+.kontaktInfo {
+    width: 249px;
+    margin:  auto;
+    padding: var(--stndSpacing);
+}
+.kontaktInfo div:nth-child(1), .kontaktInfo div:nth-child(2){
+    padding-bottom: var(--stndSpacing);
+}
+
+.socials {
+    width: 249px;
+    margin: 0 auto;
+    padding-bottom: var(--stndSpacing);
+}
+
+.socials i {
+  margin: 0 1rem;
+}
+
+@media screen and (min-width:1050px) {
+  .footercontent {
+    display: flex;  
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }  
+}
