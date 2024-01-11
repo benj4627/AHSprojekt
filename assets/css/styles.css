@@ -105,13 +105,21 @@ gap: var(--largeSpacing); */
 }
 .footercontent i {
    font-size: 2rem;
-   background-color: var(--shojiWhite);
+   color: var(--shojiWhite);
 }
 
-footer .logo img {
+/* footer .logo img {
     width: 249px;
     height: 100%;
+} */
+
+.logoWidth {
+    width: 249px;
+    height: 100%;
+    margin: 0 auto;
 }
+
+
 
 footer p {
 color: var(--shojiWhite);
@@ -135,15 +143,21 @@ font-size: .8em;
 
 .socials {
     width: 249px;
-    margin:  auto;
+    margin: 0 auto;
     padding-bottom: var(--stndSpacing);
 }
 
-@media screen and (min-width:1200px) {
+.socials i {
+  margin: 0 1rem;
+}
+
+@media screen and (min-width:1050px) {
   .footercontent {
     display: flex;  
     max-width: 1000px;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
   }  
 }
 
