@@ -156,9 +156,11 @@ ul {
 }
 
 .cardContainer {
-    background: #7a7a7a13; 
+    /* background: #7a7a7a13;  */
+    background: hsla(227, 57%, 32%, 0.9);
     border-radius: var(--borderRadius);
     width: 100%;
+    color: var(--shojiWhite);
     margin: 0 auto;
     margin-bottom: var(--largeSpacing);
 }
@@ -172,7 +174,7 @@ ul {
 
 .cardText p {
     font-size: 16px;
-    padding: 1.5rem;
+    padding: var(--largeSpacing);
 } 
 
 /* entry point */
