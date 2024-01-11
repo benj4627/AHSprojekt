@@ -141,10 +141,34 @@ ul {
 
 /* FAQ styles */
 
+/* FAQ hero billede */
 .faqheroBackgroundImg {
     height: 90vh;
     background-image:linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/faqDekstop.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+/* FAQ main section */
+
+.faqTextContainer {
+    background-color: white;
+    padding: 3rem 0;
+}
+
+.faqText {
+    max-width: 70ch;
+    margin: 0 auto;
+    padding: var(--stndSpacing);
+}
+
+.faqText p {
+    margin: 1rem 0;
+}
+
+/* FAQ side slut */
 
 /* instruktørene side */
 
@@ -152,12 +176,10 @@ ul {
 .instrukBackgroundImg {
     height: 90vh;
     background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/moedinstruktorendeHeroDekstop.jpg);
-
     background-size: 90vh;  
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 
