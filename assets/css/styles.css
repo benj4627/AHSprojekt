@@ -42,14 +42,15 @@ h3 {
 }
 
 p {
-    font-weight: 100;
+    font-weight: 300;
     line-height: 150%;
     max-width: 70ch;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+
 }
 
 .textCenter {
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -77,6 +78,7 @@ ul {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 80vh;
     padding: var(--largeSpacing);
     color: var(--shojiWhite);
 }
@@ -127,6 +129,196 @@ ul {
 
 /* Sub nav */
 
+
+/* instruktørene side */
+
+/* header, nav og intro tekst */
+.instrukBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/moedinstruktorendeHeroDekstop.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.descriptInstructors {
+    padding: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* instruktører grid layout */
+.gridContianer {
+    display: grid;
+    grid-gap: var(--largeSpacing);
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.cardContainer {
+    /* background: #7a7a7a13;  */
+    background: hsla(227, 57%, 32%, 0.9);
+    border-radius: var(--borderRadius);
+    width: 100%;
+    color: var(--shojiWhite);
+    margin: 0 auto;
+    margin-bottom: var(--largeSpacing);
+}
+
+
+.cardContainer img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: var(--borderRadius);
+}
+
+.cardText p {
+    font-size: 16px;
+    padding: var(--largeSpacing);
+} 
+
+/* entry point */
+.entryPointAshiharaContainer{
+    max-width: 400px;
+    height: 250px; 
+    margin: 4rem auto;
+}
+
+.entryPointAshihara {
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/entryPoints/2omAshiharaDesktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryPointAshihara:hover {
+    transform: scale(1.1);
+}
+
+.btnText {
+    color: var(--shojiWhite);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+/* media queries */
+
+/* media query til tablet, 2 kolonner */
+@media screen and (max-width: 1168px) {
+    .gridContianer {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .descriptInstructors {
+        max-width: 700px;
+    }
+}
+
+/* media query til mobil, 1 kolonne */
+@media screen and (max-width: 768px) {
+    .gridContianer {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        max-width: 390px;
+        margin: 0 auto;
+    }
+
+    .descriptInstructors {
+        max-width: 500px;
+    }
+}
+
+/* MØD INSTRUKTØRENE SLUT */
+
+/*  OM KLUBBEN */
+/* header */
+.omKlubbenBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/OmKlubbenHeader.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* main text */
+.klubbenTextContainer {
+    background-color: white;
+    margin-top: 4rem;
+    padding: 3rem 0;
+}
+
+.klubbenText {
+    max-width: 70ch;
+    margin: 0 auto;
+    padding: var(--stndSpacing);
+}
+
+.klubbenText p {
+    margin: 1rem 0;
+}
+
+
+/* entrypoint instruktører */
+.entryInstructorsContainer{
+    max-width: 400px;
+    height: 250px; 
+    margin: 4rem auto;
+}
+
+.entryInstructors {
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/moedinstruktorendeHeroDekstop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryInstructors:hover {
+    transform: scale(1.1);
+}
+
+.btnText {
+    color: var(--shojiWhite);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    .klubbenTextContainer {
+        padding: 4rem 0;
+        margin: 8rem 0;
+    }
+    
+    .klubbenText {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .entryInstructors {
+        margin: 0 10%;
+    }
+}
+/* om klubben færdig */
 
 
 
@@ -205,4 +397,3 @@ font-size: .8em;
     align-items: center;
   }  
 }
-
