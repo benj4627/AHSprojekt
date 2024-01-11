@@ -312,5 +312,9 @@ ul {
         max-width: 400px;
         margin: 0 auto;
     }
+
+    .entryInstructors {
+        margin: 0 10%;
+    }
 }
 /* om klubben færdig */
