@@ -188,7 +188,7 @@ ul {
 .entryPointAshihara {
     height: 100%;
     width: 100%;
-    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/entryPoints/2omAshiharaDesktopEntryPoint.jpg);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/entryPoints/2omAshiharaDesktop.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -244,7 +244,7 @@ ul {
 /* header */
 .omKlubbenBackgroundImg {
     height: 90vh;
-    background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/omKlubbenHero.jpg);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/OmKlubbenHeader.jpg);
     background-size: 90vh;  
     background-position: center;
     background-repeat: no-repeat;
@@ -279,7 +279,7 @@ ul {
 .entryInstructors {
     height: 100%;
     width: 100%;
-    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/entryPoints/EntryPointmoedinstruktorendeHeroDekstop.jpg);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/moedinstruktorendeHeroDekstop.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
