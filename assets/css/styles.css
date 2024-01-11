@@ -78,6 +78,7 @@ ul {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 80vh;
     padding: var(--largeSpacing);
     color: var(--shojiWhite);
 }
@@ -260,7 +261,7 @@ ul {
 .klubbenText {
     max-width: 70ch;
     margin: 0 auto;
-    padding: var(--largeSpacing);
+    padding: var(--stndSpacing);
 }
 
 .klubbenText p {
