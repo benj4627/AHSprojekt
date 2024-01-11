@@ -138,6 +138,86 @@ ul {
 
 /* Sub nav */
 
+/* bæltegrader og graduering side styles */
+
+/* hero billede */
+.gradueringheroBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/gradueringHeroDekstop.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* main section */
+
+.gradueringTextContainer {
+    background-color: var(--shojiWhite);
+    padding: 3rem 0;
+}
+
+.gradueringText {
+    max-width: 70ch;
+    margin: 0 auto;
+    padding: var(--stndSpacing);
+}
+
+.beltImgContainer {
+    text-align: center;
+    height: 200px;
+}
+
+
+.gradueringText p {
+    margin: 1rem 0;
+}
+
+/* Entry point */
+
+.entryPointBegivenhederContainer{
+    max-width: 400px;
+    height: 250px; 
+    margin: 4rem auto;
+}
+
+.entryPointBegivenheder{
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/begivenhederHeroDesktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryPointBegivenheder:hover {
+    transform: scale(1.1);
+}
+
+.btnText {
+    color: var(--shojiWhite);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+/* graduering media queries */
+
+@media screen and (min-width: 800px) {
+    .gradueringFlex {
+        display: flex;
+        align-items: center;
+        gap: var(--largeSpacing);
+    }
+}
+
+/* bæltegrader og graduering slut */
+
 /* Om ashihara karate side styles */
 
 /* hero billede */
