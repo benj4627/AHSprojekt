@@ -103,6 +103,10 @@ gap: var(--largeSpacing); */
 .footercontent {
    text-align: center;
 }
+.footercontent i {
+   font-size: 2rem;
+   background-color: var(--shojiWhite);
+}
 
 footer .logo img {
     width: 249px;
