@@ -152,33 +152,39 @@ ul {
 
 /* main section */
 
-.oakTextContainer {
-    background-color: white;
+.gradueringTextContainer {
+    background-color: var(--shojiWhite);
     padding: 3rem 0;
 }
 
-.oakText {
+.gradueringText {
     max-width: 70ch;
     margin: 0 auto;
     padding: var(--stndSpacing);
 }
 
-.oakText p {
+.beltImgContainer {
+    text-align: center;
+    height: 200px;
+}
+
+
+.gradueringText p {
     margin: 1rem 0;
 }
 
 /* Entry point */
 
-.entryPointGradueringContainer{
+.entryPointBegivenhederContainer{
     max-width: 400px;
     height: 250px; 
     margin: 4rem auto;
 }
 
-.entryPointGraduering {
+.entryPointBegivenheder{
     height: 100%;
     width: 100%;
-    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/gradueringHeroDekstop.jpg);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/begivenhederHeroDesktop.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -190,7 +196,7 @@ ul {
     transition: .3s ease-in-out;
 }
 
-.entryPointGraduering:hover {
+.entryPointBegivenheder:hover {
     transform: scale(1.1);
 }
 
@@ -198,6 +204,16 @@ ul {
     color: var(--shojiWhite);
     font-weight: 800;
     font-size: 2rem;
+}
+
+/* graduering media queries */
+
+@media screen and (min-width: 800px) {
+    .gradueringFlex {
+        display: flex;
+        align-items: center;
+        gap: var(--largeSpacing);
+    }
 }
 
 /* bæltegrader og graduering slut */
