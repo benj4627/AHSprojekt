@@ -82,6 +82,16 @@ ul {
     color: var(--shojiWhite);
 }
 
+.heroTextContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        flex-direction: column;
+        padding: var(--largeSpacing);
+        color: var(--shojiWhite);
+}
+
 
 .heroText p {
     font-weight: 400;
@@ -236,7 +246,12 @@ ul {
     .descriptInstructors {
         max-width: 500px;
     }
+
+    .heroTitle h1 {
+        font-size: 4vh; 
+    }
 }
+
 
 /* MØD INSTRUKTØRENE SLUT */
 
@@ -309,12 +324,13 @@ ul {
     }
     
     .klubbenText {
-        max-width: 400px;
+        max-width: 80%;
         margin: 0 auto;
     }
 
     .entryInstructors {
-        margin: 0 10%;
+        margin: 0 auto;
+        max-width: 90%;
     }
 }
 /* om klubben færdig */
@@ -395,4 +411,22 @@ font-size: .8em;
     justify-content: center;
     align-items: center;
   }  
+
+  .burgerMenu i {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width:1050px) {
+    .menu li {
+        display: none; 
+    }
+
+    .menu i {
+        display: inline-block;
+        color: var(--shojiWhite);
+        font-size: 3vh;
+        margin: var(--stndSpacing);
+    }
 }
