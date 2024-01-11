@@ -109,13 +109,9 @@ footer .logo img {
     height: 100%;
 }
 
-footer i {
-    color: var(--shojiWhite);
-}
-
 footer p {
 color: var(--shojiWhite);
-font-weight: 300;
+font-weight: 600;
 font-size: .8em;
 }
 
@@ -134,3 +130,12 @@ font-size: .8em;
     margin:  auto;
     padding-bottom: var(--stndSpacing);
 }
+
+@media screen and (min-width:1200px) {
+  .footercontent {
+    display: flex;  
+    max-width: 1000px;
+    margin: 0 auto;
+  }  
+}
+
