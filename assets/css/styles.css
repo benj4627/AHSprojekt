@@ -9,7 +9,7 @@
   --crimsonLight: #EC575B;
   --primaryBlue: #23377F; 
   --sort: #292828;
-  --grey: #7A7A7A; 
+  --grey: #7a7a7aac; 
   --largeSpacing: 2rem;
   --stndSpacing: 1rem;
   --borderRadius: 10px; 
@@ -447,7 +447,48 @@ font-size: .8em;
 }
 
 /* main */
+/* nyheder cards */
+.newsCardContainer {
+    width: 50vh;
+    padding: var(--stndSpacing);
+    background-color: var(--grey);    
+    text-align: center;
+    border-radius: var(--borderRadius);
+    transition: .3s ease-in-out;
+}
 
+.newsCardContainer:hover {
+    transform: scale(105%);
+}
+
+.newsText h3 {
+    margin: .5rem;
+    font-weight: 700;
+    color: var(--primaryBlue);
+}
+
+.newsText p {
+    margin: var(--stndSpacing);
+    font-size: .8rem;
+}
+
+.newsImg {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.524)), url(../images/nyheder/1artikel.png);
+    height: 25vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.newsImgText p {
+    font-weight: 700;
+    font-size: 2rem;
+}
 
 /* entrypoint */
 .entryTiderogHoldContainer {
