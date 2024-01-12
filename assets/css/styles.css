@@ -616,9 +616,6 @@ font-size: .8em;
     margin: 2rem auto;
     background-color: white;
     border-radius: var(--borderRadius);
-    /* display: flex;
-    justify-content: center;
-    align-items: baseline; */
 }
 
 .listContainer {
@@ -659,10 +656,95 @@ font-size: .8em;
     margin-bottom: var(--stndSpacing);
 }
 
+/* etikette section */
+.etiketteIntro {
+    text-align: center;
+}
+
+.etiketteIntro h2 {
+    font-size: 2rem;
+    margin-top: var(--largeSpacing);
+    margin-bottom: var(--stndSpacing);
+}
+
+.etiketteIntro p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight: 500;
+    padding-bottom: var(--largeSpacing);
+}
 
 
+/* etikette punkter */
 
+/* .etikettePunkterHvid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: var(--stndSpacing);
+}
 
-/* entrypoint */
+.etikettePunkter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--stndSpacing);
+}
+
+.num p {
+    color: var(--primaryBlue);
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-right: var(--largeSpacing);
+}
+
+.punkt {
+    max-width: 600px;
+    text-align: left;
+} */
+.etikettePunkterHvid {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: var(--stndSpacing);
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  .fullWidth {
+    background-color: white;
+    width: 100vw;
+  }
+  
+  .etikettePunkter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: var(--stndSpacing);
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  .num {
+    color: var(--primaryBlue);
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-right: var(--largeSpacing);
+    text-align: center;
+  }
+  
+  .num p {
+    color: var(--primaryBlue);
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-right: var(--largeSpacing);
+    align-items: center;
+  }
+  
+  .punkt {
+    max-width: 600px;
+    text-align: left;
+  }
 
 /* værdier og etikette slut */
