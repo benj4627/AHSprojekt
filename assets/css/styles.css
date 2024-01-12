@@ -49,7 +49,10 @@ p {
 
 }
 
-
+.textCenter {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
 a {
     text-decoration: none;
@@ -362,6 +365,13 @@ summary {
 }
 
 
+
+.descriptInstructors {
+    padding: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 /* instruktører grid layout */
 .gridContianer {
     display: grid;
@@ -435,7 +445,9 @@ summary {
         margin: 0 auto;
     }
 
-   
+    .descriptInstructors {
+        max-width: 700px;
+    }
 }
 
 /* media query til mobil, 1 kolonne */
@@ -446,7 +458,9 @@ summary {
         margin: 0 auto;
     }
 
-    
+    .descriptInstructors {
+        max-width: 500px;
+    }
 
     .heroTitle h1 {
         font-size: 4vh; 
@@ -630,4 +644,30 @@ font-size: .8em;
         margin: var(--stndSpacing);
     }
 }
+/*bestyrelse */
 
+.gridContianerBestyrelse {
+
+    display: grid;
+    grid-gap: var(--largeSpacing);
+    grid-template-columns: repeat(12, 1fr);
+justify-content: space-between;
+    max-width: 1400px;
+    margin: var(--stndSpacing) auto;
+}
+#bestyrelsesJan{
+    grid-column: span 4;
+}
+#bestyrelsesAllan{
+    grid-column: span 4;
+}
+
+#bestyrelsesBrian{
+    grid-column: span 4;
+}
+#bestyrelsesHenrik{
+    grid-column: 3 / 7;
+}
+#bestyrelsesDVS{
+    grid-column: 7 / 11;
+}
