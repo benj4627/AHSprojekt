@@ -596,3 +596,22 @@ font-size: .8em;
     }
 }
 /* nyheder slut */
+
+/* Værdier og etikette start */
+/* header */
+.etiketteBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/veardier-og-etikette.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* main */
+/* værdier section */
+
+
+/* entrypoint */
+
+/* værdier og etikette slut */
