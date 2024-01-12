@@ -161,9 +161,11 @@ ul {
     max-width: 250px;
     margin: 0 auto;
 }
-.holdTider p {
-    margin-top: 1rem;
+#tiderOgHoldMargin p {
+    margin: 0;
+    margin-top: .8rem;
 }
+
 
 .tiderOgHoldFlex {
     display: flex;
@@ -172,7 +174,6 @@ ul {
 
 .tiderOgHoldTextContainer {
     background-color: var(--shojiWhite);
-    padding: 3rem 0;
 }
 
 .tiderOgHoldText {
@@ -220,6 +221,19 @@ ul {
     font-weight: 800;
     font-size: 2rem;
 }
+
+/* media queries */
+
+@media screen and (min-width: 800px) {
+    .tiderOgHoldDesktop {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+/* træningtider og hold slut */
 
 /* Vedtægter side styles */
 
