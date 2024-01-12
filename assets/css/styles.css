@@ -676,33 +676,6 @@ font-size: .8em;
 
 
 /* etikette punkter */
-
-/* .etikettePunkterHvid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    padding: var(--stndSpacing);
-}
-
-.etikettePunkter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: var(--stndSpacing);
-}
-
-.num p {
-    color: var(--primaryBlue);
-    font-size: 2.5rem;
-    font-weight: 900;
-    margin-right: var(--largeSpacing);
-}
-
-.punkt {
-    max-width: 600px;
-    text-align: left;
-} */
 .etikettePunkterHvid {
     display: flex;
     justify-content: flex-start;
@@ -746,5 +719,27 @@ font-size: .8em;
     max-width: 600px;
     text-align: left;
   }
+
+
+  /* værdier media queries  */
+  @media screen and (max-width: 768px) {
+    .listContainer {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        grid-gap: unset; 
+    }
+
+    #balance {
+        margin: 0;
+    }
+
+    .num {
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+
+    .punkt {
+        max-width: 250px;
+    }
+}
 
 /* værdier og etikette slut */
