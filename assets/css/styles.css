@@ -153,6 +153,23 @@ ul {
 
 /* main section */
 
+.holdTider h2 {
+    text-align: center;
+}
+
+.holdTider {
+    max-width: 250px;
+    margin: 0 auto;
+}
+.holdTider p {
+    margin-top: 1rem;
+}
+
+.tiderOgHoldFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
 .tiderOgHoldTextContainer {
     background-color: var(--shojiWhite);
     padding: 3rem 0;
