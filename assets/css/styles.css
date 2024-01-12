@@ -42,16 +42,14 @@ h3 {
 }
 
 p {
-    font-weight: 100;
+    font-weight: 300;
     line-height: 150%;
     max-width: 70ch;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+
 }
 
-.textCenter {
-    max-width: 1000px;
-    margin: 0 auto;
-}
+
 
 a {
     text-decoration: none;
@@ -72,13 +70,23 @@ ul {
     background-size: cover;
 }
 
-.heroTextContainer {
+.frontPageTextContainer{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: var(--largeSpacing);
     color: var(--shojiWhite);
+}
+
+.heroTextContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        flex-direction: column;
+        padding: var(--largeSpacing);
+        color: var(--shojiWhite);
 }
 
 
@@ -126,4 +134,500 @@ ul {
 
 
 /* Sub nav */
+
+/* Vedtægter side styles */
+
+/* herobillede */
+.vedtaegterheroBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/vedtaegter.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* accordion styles */
+
+.vedtaegtContainerSingleBorder {
+    border-bottom: 3px solid var(--primaryBlue);
+}
+.vedtaegtContainerDoubleBorder {
+    border-top: 3px solid var(--primaryBlue);
+    border-bottom: 3px solid var(--primaryBlue);
+}
+
+summary {
+    padding: .5rem 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  summary:after{
+    content: "\002B";
+    font-size: 2rem;
+  }
+
+  details[open] summary:after{
+    content: "\00D7";
+  }
+
+/* Vedtægter side slut */
+
+/* bæltegrader og graduering side styles */
+
+/* hero billede */
+.gradueringheroBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/gradueringHeroDekstop.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* main section */
+
+.gradueringTextContainer {
+    background-color: var(--shojiWhite);
+    padding: 3rem 0;
+}
+
+.gradueringText {
+    max-width: 70ch;
+    margin: 0 auto;
+    padding: var(--stndSpacing);
+}
+
+.beltImgContainer {
+    text-align: center;
+    height: 200px;
+}
+
+
+.gradueringText p {
+    margin: 1rem 0;
+}
+
+/* Entry point */
+
+.entryPointBegivenhederContainer{
+    max-width: 400px;
+    height: 250px; 
+    margin: 4rem auto;
+}
+
+.entryPointBegivenheder{
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/begivenhederHeroDesktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryPointBegivenheder:hover {
+    transform: scale(1.1);
+}
+
+.btnText {
+    color: var(--shojiWhite);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+/* graduering media queries */
+
+@media screen and (min-width: 800px) {
+    .gradueringFlex {
+        display: flex;
+        align-items: center;
+        gap: var(--largeSpacing);
+    }
+}
+
+/* bæltegrader og graduering slut */
+
+/* Om ashihara karate side styles */
+
+/* hero billede */
+.oakheroBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/forside/2omAshiharaDesktop.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* main section */
+
+.oakTextContainer {
+    background-color: white;
+    padding: 3rem 0;
+}
+
+.oakText {
+    max-width: 70ch;
+    margin: 0 auto;
+    padding: var(--stndSpacing);
+}
+
+.oakText p {
+    margin: 1rem 0;
+}
+
+/* Entry point */
+
+.entryPointGradueringContainer{
+    max-width: 400px;
+    height: 250px; 
+    margin: 4rem auto;
+}
+
+.entryPointGraduering {
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/gradueringHeroDekstop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryPointGraduering:hover {
+    transform: scale(1.1);
+}
+
+.btnText {
+    color: var(--shojiWhite);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+/* Om ashihara karate slut */
+
+/* FAQ side styles */
+
+/* FAQ hero billede */
+.faqheroBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/faqDekstop.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* FAQ main section */
+
+.faqTextContainer {
+    background-color: white;
+    padding: 3rem 0;
+}
+
+.faqText {
+    max-width: 70ch;
+    margin: 0 auto;
+    padding: var(--stndSpacing);
+}
+
+.faqText p {
+    margin: 1rem 0;
+}
+
+/* FAQ side slut */
+
+/* instruktørene side */
+
+/* header, nav og intro tekst */
+.instrukBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/moedinstruktorendeHeroDekstop.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* instruktører grid layout */
+.gridContianer {
+    display: grid;
+    grid-gap: var(--largeSpacing);
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.cardContainer {
+    /* background: #7a7a7a13;  */
+    background: hsla(227, 57%, 32%, 0.9);
+    border-radius: var(--borderRadius);
+    width: 100%;
+    color: var(--shojiWhite);
+    margin: 0 auto;
+    margin-bottom: var(--largeSpacing);
+}
+
+
+.cardContainer img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: var(--borderRadius);
+}
+
+.cardText p {
+    font-size: 16px;
+    padding: var(--largeSpacing);
+} 
+
+/* entry point */
+.entryPointAshiharaContainer{
+    max-width: 400px;
+    height: 250px; 
+    margin: 4rem auto;
+}
+
+.entryPointAshihara {
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/entryPoints/2omAshiharaDesktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryPointAshihara:hover {
+    transform: scale(1.1);
+}
+
+.btnText {
+    color: var(--shojiWhite);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+/* media queries */
+
+/* media query til tablet, 2 kolonner */
+@media screen and (max-width: 1168px) {
+    .gridContianer {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+   
+}
+
+/* media query til mobil, 1 kolonne */
+@media screen and (max-width: 768px) {
+    .gridContianer {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        max-width: 390px;
+        margin: 0 auto;
+    }
+
+    
+
+    .heroTitle h1 {
+        font-size: 4vh; 
+    }
+}
+
+
+/* MØD INSTRUKTØRENE SLUT */
+
+/*  OM KLUBBEN */
+/* header */
+.omKlubbenBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/OmKlubbenHeader.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* main text */
+.klubbenTextContainer {
+    background-color: white;
+    padding: 3rem 0;
+}
+
+.klubbenText {
+    max-width: 70ch;
+    margin: 0 auto;
+    padding: var(--stndSpacing);
+}
+
+.klubbenText p {
+    margin: 1rem 0;
+}
+
+
+/* entrypoint instruktører */
+.entryInstructorsContainer{
+    max-width: 400px;
+    height: 250px; 
+    margin: 4rem auto;
+}
+
+.entryInstructors {
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/moedinstruktorendeHeroDekstop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryInstructors:hover {
+    transform: scale(1.1);
+}
+
+.btnText {
+    color: var(--shojiWhite);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    .klubbenTextContainer {
+        padding: 4rem 0;
+        margin: 8rem 0;
+    }
+    
+    .klubbenText {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .entryInstructors {
+        margin: 0 auto;
+        max-width: 90%;
+    }
+}
+/* om klubben færdig */
+
+
+
+/* footer  styles */
+
+.footerBackgroundColor {
+background-color: black;
+}
+
+footer {
+padding-block: var(--largeSpacing);
+width: 80%;
+margin: 0 auto;
+/* display: flex;
+justify-content: center;
+gap: var(--largeSpacing); */
+}
+
+.footercontent {
+   text-align: center;
+}
+.footercontent i {
+   font-size: 2rem;
+   color: var(--shojiWhite);
+}
+
+/* footer .logo img {
+    width: 249px;
+    height: 100%;
+} */
+
+.logoWidth {
+    width: 249px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+
+footer p {
+color: var(--shojiWhite);
+font-weight: 600;
+font-size: .8em;
+}
+
+.footerFlex {
+    display: flex;
+    gap: var(--stndSpacing);
+}
+
+.kontaktInfo {
+    width: 249px;
+    margin:  auto;
+    padding: var(--stndSpacing);
+}
+.kontaktInfo div:nth-child(1), .kontaktInfo div:nth-child(2){
+    padding-bottom: var(--stndSpacing);
+}
+
+.socials {
+    width: 249px;
+    margin: 0 auto;
+    padding-bottom: var(--stndSpacing);
+}
+
+.socials i {
+  margin: 0 1rem;
+}
+
+@media screen and (min-width:1050px) {
+  .footercontent {
+    display: flex;  
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }  
+
+  .burgerMenu i {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width:1050px) {
+    .menu li {
+        display: none; 
+    }
+
+    .menu i {
+        display: inline-block;
+        color: var(--shojiWhite);
+        font-size: 3vh;
+        margin: var(--stndSpacing);
+    }
+}
 
