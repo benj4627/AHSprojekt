@@ -448,13 +448,22 @@ font-size: .8em;
 
 /* main */
 /* nyheder cards */
+.newsGridContainer {
+    display: grid;
+    grid-gap: 5rem;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .newsCardContainer {
-    width: 50vh;
-    padding: var(--stndSpacing);
-    background-color: var(--grey);    
+    max-width: 100%;
+    padding: var(--largeSpacing);
+    background-color: white;   
     text-align: center;
     border-radius: var(--borderRadius);
     transition: .3s ease-in-out;
+    margin-top: 4rem;
 }
 
 .newsCardContainer:hover {
@@ -470,10 +479,11 @@ font-size: .8em;
 .newsText p {
     margin: var(--stndSpacing);
     font-size: .8rem;
+    color: var(--primaryBlue);
 }
 
 .newsImg {
-    background-image:linear-gradient( rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.524)), url(../images/nyheder/1artikel.png);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.637)), url(../images/nyheder/1artikel.png);
     height: 25vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -489,6 +499,46 @@ font-size: .8em;
     font-weight: 700;
     font-size: 2rem;
 }
+
+.news2Img {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.637)), url(../images/nyheder/2artikel.png);
+    height: 25vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.news3Img {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.637)), url(../images/nyheder/3artikele.png);
+    height: 25vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.news4Img {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.637)), url(../images/nyheder/4artikel.png);
+    height: 25vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 
 /* entrypoint */
 .entryTiderogHoldContainer {
@@ -522,4 +572,27 @@ font-size: .8em;
     font-size: 2rem;
 }
 
+/* media queries nyheder */
+@media screen and (max-width: 768px) {
+    .newsGridContainer {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        grid-gap: 2rem; 
+    }
+
+    .newsCardContainer {
+        margin-top: var(--stndSpacing);
+    }
+
+    .newsImg, .news2Img, .news3Img, .news4Img {
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width: 2208px) {
+    .newsGridContainer {
+        grid-template-columns: repeat(4, minmax(400px, 1fr));
+        max-width: 2400px;
+        margin: 0 auto;
+    }
+}
 /* nyheder slut */
