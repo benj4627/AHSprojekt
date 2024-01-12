@@ -138,6 +138,72 @@ ul {
 
 /* Sub nav */
 
+/* Træningstider og hold side styles */
+
+/* herobillede */
+
+.tiderOgHoldheroBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/forside/3traeningtider-og-hold-Desktop.jgp.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* main section */
+
+.tiderOgHoldTextContainer {
+    background-color: var(--shojiWhite);
+    padding: 3rem 0;
+}
+
+.tiderOgHoldText {
+    max-width: 70ch;
+    margin: 0 auto;
+    padding: var(--largeSpacing);
+}
+
+.holdBaggrundHvid {
+    background-color: white;
+}
+
+.tiderOgHoldText p {
+    margin: 1rem 0;
+}
+/* entrypoints */
+
+.entryPointBlivMedlemContainer{
+    max-width: 400px;
+    height: 250px; 
+    margin: 4rem auto;
+}
+
+.entryPointBlivMedlem{
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/4blivMedlemHeroDesktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryPointBlivMedlem:hover {
+    transform: scale(1.1);
+}
+
+.btnText {
+    color: var(--shojiWhite);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
 /* Vedtægter side styles */
 
 /* herobillede */
