@@ -198,7 +198,7 @@ ul {
 .entryPointAshihara {
     height: 100%;
     width: 100%;
-    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/entryPoints/2omAshiharaDesktop.jpg);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/entryPoints/EntryPointomAshiharaDesktop.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -400,6 +400,11 @@ font-size: .8em;
 
 .socials i {
   margin: 0 1rem;
+  transition: .3s ease-in-out;
+}
+
+.socials i:hover {
+    transform: scale(130%);
 }
 
 @media screen and (min-width:1050px) {
@@ -429,3 +434,51 @@ font-size: .8em;
         margin: var(--stndSpacing);
     }
 }
+
+/* nyheder start */
+/* header */
+.nyhederBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/nyhederDesktop.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* main */
+
+
+/* entrypoint */
+.entryTiderogHoldContainer {
+    max-width: 400px;
+    height: 250px; 
+    margin: 4rem auto;
+}
+
+.entryTiderogHold {
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.586), rgba(0, 0, 0, 0.425)), url(../images/moedinstruktorendeHeroDekstop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryTiderogHold:hover {
+    transform: scale(1.1);
+}
+
+.btnText {
+    color: var(--shojiWhite);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+/* nyheder slut */
