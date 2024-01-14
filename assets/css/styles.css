@@ -680,3 +680,43 @@ justify-content: space-between;
 
 
 /*udstyr*/
+
+.udstyr{
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    max-width: 1400px;
+    margin: 20px 30vw;
+}
+.udstyr p{
+    margin: 1rem 2px;
+}
+.udstyr div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    background-color: #d9d6d66c;
+    margin-top: var(--largeSpacing);
+
+}
+.købBtn{
+    margin-top: var(--stndSpacing);
+    margin-bottom: var(--stndSpacing);
+    background-color: var(--crimsonRed);
+    padding: 8px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.udstyrBtn{
+    background-color: white;
+    padding: 6px 12px;
+}
+
+@media screen and (max-width:1050px) {
+    .udstyr{
+       display: block;
+    }
+   
+   }
