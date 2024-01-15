@@ -6,7 +6,7 @@
  :root{
   --shojiWhite: #EEEDE8; 
   --crimsonRed: #E31E24; 
-  --crimsonLight: #EC575B;
+  --crimsonLight: #ec6f73;
   --primaryBlue: #23377F; 
   --sort: #292828;
   --grey: #7a7a7aac; 
@@ -760,16 +760,31 @@ font-size: .8em;
 .introText p {
     max-width: unset;
     margin-top: var(--stndSpacing);
+    margin-bottom: var(--largeSpacing);
 }
 
 /* form syling */
+select {
+    border: unset;
+    text-align: left;
+    min-width: 50vw;
+    height: 3rem;
+    padding: 1rem; 
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+option {
+    font-size: 1rem;
+    margin: 1rem;
+}
+
 form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: .5rem;
-    
+    gap: .5rem; 
 }
 
 input {
@@ -777,7 +792,7 @@ input {
     border-radius: 3px;
     border: unset;
     text-align: left;
-    min-width: 300px;
+    min-width: 50vw;
     height: 3rem;
     padding: 1rem;
 }
@@ -785,10 +800,29 @@ input {
 label {
     font-weight: 700;
     display: inline-block;
+    font-size: 1.2rem;
 }
 
 ::placeholder {
     font-style: italic;
+}
+
+/* rød button */
+.blivMedlemBtn {
+    color: white;
+    font-weight: 700;
+    background-color: var(--crimsonRed);
+    padding: 1rem 2rem;
+    min-width: 15vw;
+    border: unset;
+    border-radius: var(--borderRadius);
+    margin-top: var(--stndSpacing);
+    transition: .3s ease-in-out;
+}
+
+.blivMedlemBtn:hover {
+    background-color: var(--crimsonLight);
+    font-size: 93%;
 }
 
 /* entry points udstyr */
@@ -821,5 +855,17 @@ label {
     color: var(--shojiWhite);
     font-weight: 800;
     font-size: 2rem;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    .introText {
+        max-width: 300px;
+        margin: 10%
+    }
+
+    .blivMedlemBackgroundImg h1 {
+        font-size: 10vw;
+    }
 }
 /* bliv medlem slut */
