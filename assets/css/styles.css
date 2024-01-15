@@ -678,7 +678,7 @@ font-size: .8em;
 /* etikette punkter */
 .etikettePunkterHvid {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
     align-items: center;
     padding: var(--stndSpacing);
     margin: 0 auto;
@@ -687,32 +687,25 @@ font-size: .8em;
 
   .fullWidth {
     background-color: white;
-    width: 100vw;
+    max-width: 100vw;
   }
   
   .etikettePunkter {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
     align-items: center;
     padding: var(--stndSpacing);
     margin: 0 auto;
     max-width: 800px;
   }
   
-  .num {
-    color: var(--primaryBlue);
-    font-size: 2.5rem;
-    font-weight: 900;
-    margin-right: var(--largeSpacing);
-    text-align: center;
-  }
-  
   .num p {
+    display: flex;
+    align-self: flex-start;
     color: var(--primaryBlue);
     font-size: 2.5rem;
     font-weight: 900;
-    margin-right: var(--largeSpacing);
-    align-items: center;
+    margin-right: 3rem;
   }
   
   .punkt {
