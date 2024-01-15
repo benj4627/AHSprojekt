@@ -736,6 +736,31 @@ justify-content: space-between;
     }
    
    }
+   /*entry point*/
+   .entryPointBælteContainer{
+    max-width: 400px;
+    height: 250px; 
+    margin: 4rem auto;
+}
+
+.entryPointBælte {
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/gradueringHeroDekstop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryPointBælte:hover {
+    transform: scale(1.1);
+}
 
    /*støt klubben*/
    .stoetKlubbenBackgroundImg {
@@ -788,4 +813,59 @@ justify-content: space-between;
    .støtKlubben div{
     max-width: none;
    }
+   }
+   /*entry point*/
+   .entryPointOmKlubbenContainer{
+    max-width: 400px;
+    height: 250px; 
+    margin: 4rem auto;
+}
+
+.entryPointOmKlubben {
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/om-klubben.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryPointOmKlubben:hover {
+    transform: scale(1.1);
+}
+
+   /*begivenheder*/
+.begivenheder{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+    
+    
+}
+.begivenheder div{
+display: flex;
+justify-content: center;
+
+flex-direction: column;
+align-items: center;
+margin-top: var(--largeSpacing);
+background-color: #d9d6d66c;
+border-radius: var(--borderRadius);
+
+}   
+.begivenheder p{
+    min-width: 400px;
+    padding: var(--largeSpacing) var(--largeSpacing);
+}
+@media screen and (max-width:1050px) {
+   .begivenheder p{
+    min-width: none;
+   }
+   
    }
