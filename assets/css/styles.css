@@ -645,6 +645,14 @@ font-size: .8em;
     }
 }
 /*bestyrelse */
+.bestyrelseBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/bestyrelse\ 600px.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .gridContainerBestyrelse {
 
@@ -680,6 +688,14 @@ justify-content: space-between;
 
 
 /*udstyr*/
+.udstyrBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/udstyrHeroDesktop.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .udstyr{
     display: grid;
@@ -719,4 +735,57 @@ justify-content: space-between;
        display: block;
     }
    
+   }
+
+   /*støt klubben*/
+   .stoetKlubbenBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/stoetKlubbenHeroDesktop.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+   .støtKlubben{
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+   }
+
+   .støtKlubben div{
+    display: flex;
+    flex-direction: column;
+    max-width: 20vw;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d9d6d66c;
+    margin-top: 4rem;
+    border-radius: var(--borderRadius);
+
+   }
+
+   .støtKlubben p{
+    margin: 2rem 2rem;
+   }
+
+   .støtKlubben button{
+    background-color: var(--crimsonRed);
+    color: white;
+    max-width: 400px;
+    padding: 1.5rem 3.5rem;
+    font-size: large;
+    font-weight: 500;
+    margin: 2rem 2rem;
+    border: none;
+    border-radius: var(--borderRadius);
+    cursor: pointer;
+   }
+
+   @media screen and (max-width:1050px) {
+    .støtKlubben{
+       display: block;
+    }
+   .støtKlubben div{
+    max-width: none;
+   }
    }
