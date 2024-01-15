@@ -134,9 +134,36 @@ ul {
     height: 100%;
 }
 
+/* dropdown */
+.navItem {
+    display: flex;
+    align-items: center;
+    color: var(--shojiWhite);
+  }
 
+  .dropdownNav1 {
+    display: none;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.353);
+    padding: 1.5rem;
+  }
 
-/* Sub nav */
+  .dropdownNav1 a {
+    padding: .2rem;
+  }
+
+  .dropdownNav1 li {
+    margin: .5rem;
+  }
+  
+  .navItem:hover .dropdownNav1 {
+    display: inline-flex; 
+    z-index: 1;
+    flex-direction: column;
+    position: absolute;
+    top: 13%;
+    border-radius: var(--borderRadius);
+  }
 
 
 /* instruktørene side */
@@ -747,38 +774,6 @@ font-size: .8em;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
-/* dropdown */
-.navItem {
-    display: flex;
-    align-items: center;
-    color: var(--shojiWhite);
-  }
-
-  .dropdownNav1 {
-    display: none;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.353);
-    padding: 1.5rem;
-  }
-
-  .dropdownNav1 a {
-    padding: .2rem;
-  }
-
-  .dropdownNav1 li {
-    margin: .5rem;
-  }
-  
-  .navItem:hover .dropdownNav1 {
-    display: inline-flex; 
-    flex-direction: column;
-    position: absolute;
-    top: 13%;
-    border-radius: var(--borderRadius);
-  }
-
 
 /* main styling */
 /* tekst styling */
