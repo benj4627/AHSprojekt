@@ -224,12 +224,16 @@ ul {
 
 /* media queries */
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 930px) {
     .tiderOgHoldDesktop {
         display: flex;
         justify-content: space-between;
-        max-width: 1200px;
+        max-width: 930px;
         margin: 0 auto;
+    }
+
+    .holdTider {
+       margin-inline: var(--largeSpacing);
     }
 }
 
