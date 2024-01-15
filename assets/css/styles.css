@@ -736,3 +736,90 @@ font-size: .8em;
 }
 
 /* værdier og etikette slut */
+
+/* bliv medlem start */
+/* header styling */
+.blivMedlemBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/4blivMedlemHeroDesktop.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* main styling */
+/* tekst styling */
+.introText {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: var(--largeSpacing);
+}
+
+.introText p {
+    max-width: unset;
+    margin-top: var(--stndSpacing);
+}
+
+/* form syling */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    
+}
+
+input {
+    margin-bottom: var(--stndSpacing);
+    border-radius: 3px;
+    border: unset;
+    text-align: left;
+    min-width: 300px;
+    height: 3rem;
+    padding: 1rem;
+}
+
+label {
+    font-weight: 700;
+    display: inline-block;
+}
+
+::placeholder {
+    font-style: italic;
+}
+
+/* entry points udstyr */
+.entryPointUdstyrContainer {
+    max-width: 400px;
+    height: 250px; 
+    margin: 4rem auto;
+}
+
+.entryPointUdstyr {
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.586), rgba(0, 0, 0, 0.425)), url(../images/entryPoints/udstyrBtnDesktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryPointUdstyr:hover {
+    transform: scale(1.1);
+}
+
+.btnText {
+    color: var(--shojiWhite);
+    font-weight: 800;
+    font-size: 2rem;
+}
+/* bliv medlem slut */
