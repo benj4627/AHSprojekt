@@ -63,6 +63,8 @@ ul {
     list-style: none;
 }
 
+/* forside styles */
+
 /* Header */
 .heroBackgroundImg {
     height: 90vh;
@@ -134,9 +136,143 @@ ul {
     height: 100%;
 }
 
+/* main section */
 
+.forsideTextContainer {
+    background-color: var(--shojiWhite);
+    padding-top: 3rem;
+}
+
+.forsideText {
+    max-width: 70ch;
+    margin: 0 auto;
+    padding: var(--stndSpacing);
+}
+
+.forsideText p {
+    margin: 1rem 0;
+}
+
+/* ashirhara benefits section */
+
+#ashiharaBenefits {
+text-align: center;
+}
+
+#ashiharaBenefits p {
+font-weight: 900;
+color: var(--primaryBlue);
+font-size: 1.5rem;
+
+}
+
+#ashiharaBenefits i {
+color: var(--primaryBlue);
+font-size: 5.5rem;
+}
+
+
+
+.forsideTextContainer2 {
+    background-color: var(--shojiWhite);
+    padding: 0;
+}
+
+ /* entrypoints */
+
+ .entryPointKlubbenContainer{
+    max-width: 400px;
+    height: 250px; 
+    margin: 4rem auto;
+}
+
+.entryPointKlubben{
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/OmKlubbenHeader.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryPointKlubben:hover {
+    transform: scale(1.1);
+}
+
+.btnText {
+    color: var(--shojiWhite);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.entryPointHoldContainer{
+    max-width: 400px;
+    height: 250px; 
+    margin: 4rem auto;
+}
+
+
+.entryPointHold{
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/forside/3traeningtider-og-hold-Desktop.jgp.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryPointHold:hover {
+    transform: scale(1.1);
+}
+
+.btnText {
+    color: var(--shojiWhite);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+
+
+@media screen and (min-width: 900px) {
+    .forsideEntryPoints {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 950px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 600px) {
+    .forsideTextContainer2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* max-width: 600px; */
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 800px) {
+    .forsideTextContainer2 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 950px;
+        margin: 0 auto;
+    }
+}
 
 /* Sub nav */
+
+/* forside styles slut */
 
 /* Træningstider og hold side styles */
 
