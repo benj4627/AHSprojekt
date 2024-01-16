@@ -63,6 +63,8 @@ ul {
     list-style: none;
 }
 
+/* forside styles */
+
 /* Header */
 .heroBackgroundImg {
     height: 90vh;
@@ -132,12 +134,122 @@ ul {
     color: var(--sort);
 }
 
+
 /* dropdown */
 .navItem {
     display: flex;
     align-items: center;
     color: var(--shojiWhite);
   }
+
+/* main section */
+
+.forsideTextContainer {
+    background-color: var(--shojiWhite);
+    padding-top: 3rem;
+}
+
+.forsideText {
+    max-width: 70ch;
+    margin: 0 auto;
+    padding: var(--stndSpacing);
+}
+
+.forsideText p {
+    margin: 1rem 0;
+}
+
+/* ashirhara benefits section */
+
+#ashiharaBenefits {
+text-align: center;
+}
+
+#ashiharaBenefits p {
+font-weight: 900;
+color: var(--primaryBlue);
+font-size: 1.5rem;
+
+}
+
+#ashiharaBenefits i {
+color: var(--primaryBlue);
+font-size: 5.5rem;
+}
+
+
+
+.forsideTextContainer2 {
+    background-color: var(--shojiWhite);
+    padding: 0;
+}
+
+ /* entrypoints */
+
+ .entryPointKlubbenContainer{
+    max-width: 400px;
+    height: 250px; 
+    margin: 4rem auto;
+}
+
+.entryPointKlubben{
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/OmKlubbenHeader.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryPointKlubben:hover {
+    transform: scale(1.1);
+}
+
+.btnText {
+    color: var(--shojiWhite);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.entryPointHoldContainer{
+    max-width: 400px;
+    height: 250px; 
+    margin: 4rem auto;
+}
+
+
+.entryPointHold{
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/forside/3traeningtider-og-hold-Desktop.jgp.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryPointHold:hover {
+    transform: scale(1.1);
+}
+
+.btnText {
+    color: var(--shojiWhite);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+
 
   .dropdownNav1 {
     display: none;
@@ -146,6 +258,7 @@ ul {
     min-width: 15vw;
     padding: .5rem;
   }
+
 
   .dropdownNav1 a {
     padding: .8rem;
@@ -171,6 +284,350 @@ ul {
 
   /* burger slut */
 
+@media screen and (min-width: 900px) {
+    .forsideEntryPoints {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 950px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 600px) {
+    .forsideTextContainer2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* max-width: 600px; */
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 800px) {
+    .forsideTextContainer2 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 950px;
+        margin: 0 auto;
+    }
+}
+
+/* Sub nav */
+
+
+/* forside styles slut */
+
+/* Træningstider og hold side styles */
+
+/* herobillede */
+
+.tiderOgHoldheroBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/forside/3traeningtider-og-hold-Desktop.jgp.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* main section */
+
+.holdTider h2 {
+    text-align: center;
+}
+
+.holdTider {
+    max-width: 250px;
+    margin: 0 auto;
+}
+#tiderOgHoldMargin p {
+    margin: 0;
+    margin-top: .8rem;
+}
+
+
+.tiderOgHoldFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tiderOgHoldTextContainer {
+    background-color: var(--shojiWhite);
+}
+
+.tiderOgHoldText {
+    max-width: 70ch;
+    margin: 0 auto;
+    padding: var(--largeSpacing);
+}
+
+.holdBaggrundHvid {
+    background-color: white;
+}
+
+.tiderOgHoldText p {
+    margin: 1rem 0;
+}
+/* entrypoints */
+
+.entryPointBlivMedlemContainer{
+    max-width: 400px;
+    height: 250px; 
+    margin: 4rem auto;
+}
+
+.entryPointBlivMedlem{
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/4blivMedlemHeroDesktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryPointBlivMedlem:hover {
+    transform: scale(1.1);
+}
+
+.btnText {
+    color: var(--shojiWhite);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+/* media queries */
+
+@media screen and (min-width: 930px) {
+    .tiderOgHoldDesktop {
+        display: flex;
+        justify-content: space-between;
+        max-width: 930px;
+        margin: 0 auto;
+    }
+
+    .holdTider {
+       margin-inline: var(--largeSpacing);
+    }
+}
+
+/* træningtider og hold slut */
+
+/* Vedtægter side styles */
+
+/* herobillede */
+.vedtaegterheroBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/vedtaegter.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* accordion styles */
+
+.vedtaegtContainerSingleBorder {
+    border-bottom: 3px solid var(--primaryBlue);
+}
+.vedtaegtContainerDoubleBorder {
+    border-top: 3px solid var(--primaryBlue);
+    border-bottom: 3px solid var(--primaryBlue);
+}
+
+summary {
+    padding: .5rem 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  summary:after{
+    content: "\002B";
+    font-size: 2rem;
+  }
+
+  details[open] summary:after{
+    content: "\00D7";
+  }
+
+/* Vedtægter side slut */
+
+/* bæltegrader og graduering side styles */
+
+/* hero billede */
+.gradueringheroBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/gradueringHeroDekstop.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* main section */
+
+.gradueringTextContainer {
+    background-color: var(--shojiWhite);
+    padding: 3rem 0;
+}
+
+.gradueringText {
+    max-width: 70ch;
+    margin: 0 auto;
+    padding: var(--stndSpacing);
+}
+
+.beltImgContainer {
+    text-align: center;
+    height: 200px;
+}
+
+
+.gradueringText p {
+    margin: 1rem 0;
+}
+
+/* Entry point */
+
+.entryPointBegivenhederContainer{
+    max-width: 400px;
+    height: 250px; 
+    margin: 4rem auto;
+}
+
+.entryPointBegivenheder{
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/begivenhederHeroDesktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryPointBegivenheder:hover {
+    transform: scale(1.1);
+}
+
+.btnText {
+    color: var(--shojiWhite);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+/* graduering media queries */
+
+@media screen and (min-width: 800px) {
+    .gradueringFlex {
+        display: flex;
+        align-items: center;
+        gap: var(--largeSpacing);
+    }
+}
+
+/* bæltegrader og graduering slut */
+
+/* Om ashihara karate side styles */
+
+/* hero billede */
+.oakheroBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/forside/2omAshiharaDesktop.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* main section */
+
+.oakTextContainer {
+    background-color: white;
+    padding: 3rem 0;
+}
+
+.oakText {
+    max-width: 70ch;
+    margin: 0 auto;
+    padding: var(--stndSpacing);
+}
+
+.oakText p {
+    margin: 1rem 0;
+}
+
+/* Entry point */
+
+.entryPointGradueringContainer{
+    max-width: 400px;
+    height: 250px; 
+    margin: 4rem auto;
+}
+
+.entryPointGraduering {
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/gradueringHeroDekstop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryPointGraduering:hover {
+    transform: scale(1.1);
+}
+
+.btnText {
+    color: var(--shojiWhite);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+/* Om ashihara karate slut */
+
+/* FAQ side styles */
+
+/* FAQ hero billede */
+.faqheroBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/faqDekstop.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* FAQ main section */
+
+.faqTextContainer {
+    background-color: white;
+    padding: 3rem 0;
+}
+
+.faqText {
+    max-width: 70ch;
+    margin: 0 auto;
+    padding: var(--stndSpacing);
+}
+
+.faqText p {
+    margin: 1rem 0;
+}
+
+/* FAQ side slut */
 
 /* instruktørene side */
 
@@ -183,6 +640,8 @@ ul {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 
 .descriptInstructors {
     padding: 3rem;
@@ -467,6 +926,7 @@ font-size: .8em;
         margin: var(--stndSpacing);
     }
 }
+
 
 /* nyheder start */
 /* header */
