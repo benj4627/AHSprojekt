@@ -158,7 +158,7 @@ ul {
   
   .navItem:hover .dropdownNav1 {
     display: inline-flex; 
-    z-index: 1;
+    z-index: 2;
     flex-direction: column;
     position: absolute;
     top: 8%;
@@ -896,3 +896,93 @@ label {
     }
 }
 /* bliv medlem slut */
+
+/* tider og hold start */
+/* header */
+.tiderOgHoldBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/forside/3traeningtider-og-hold-Desktop.jgp.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* træningstider sektion*/
+.tiderContainer {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    text-align: center;
+    align-items: baseline;
+}
+
+.tiderContainer h3 {
+    font-size: 1.8rem;
+    text-wrap: wrap;
+    margin: var(--stndSpacing);
+}
+
+.traeningsTiderHvid {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 4rem;
+    padding-top: var(--largeSpacing);
+}
+
+.traeningsTider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.traeningsTiderHvid p, .traeningsTider p {
+    margin: var(--stndSpacing);
+}
+
+.tid {
+    display: flex;
+}
+
+.ugedag {
+    padding-right: 4em;
+    font-weight: 700;
+}
+
+/* entry point */
+.entryBlivMedlemContainer {
+    max-width: 400px;
+    height: 250px; 
+    margin: 4rem auto;
+}
+
+.entryPointBlivMedlem {
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.586), rgba(0, 0, 0, 0.425)), url(../images/entryPoints/EntryPointblivMedlem.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryPointBlivMedlem:hover {
+    transform: scale(1.1);
+}
+
+.btnText {
+    color: var(--shojiWhite);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+/* tider og hold slut */
