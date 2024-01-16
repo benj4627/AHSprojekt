@@ -1490,3 +1490,231 @@ label {
 }
 
 /* tider og hold slut */
+/*bestyrelse */
+.bestyrelseBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/bestyrelse\ 600px.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gridContainerBestyrelse {
+
+    display: grid;
+    grid-gap: var(--largeSpacing);
+    grid-template-columns: repeat(12, 1fr);
+justify-content: space-between;
+    max-width: 1400px;
+    margin: var(--stndSpacing) auto;
+}
+#bestyrelsesJan{
+    grid-column: span 4;
+}
+#bestyrelsesAllan{
+    grid-column: span 4;
+}
+
+#bestyrelsesBrian{
+    grid-column: span 4;
+}
+#bestyrelsesHenrik{
+    grid-column: 3 / 7;
+}
+#bestyrelsesDVS{
+    grid-column: 7 / 11;
+}
+@media screen and (max-width:1050px) {
+ .gridContainerBestyrelse{
+    display: block;
+ }
+
+}
+
+
+/*udstyr*/
+.udstyrBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/udstyrHeroDesktop.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.udstyr{
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    max-width: 1400px;
+    margin: 20px 30vw;
+}
+.udstyr p{
+    margin: 1rem 2px;
+}
+.udstyr div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    background-color: #d9d6d66c;
+    margin-top: var(--largeSpacing);
+
+}
+.købBtn{
+    margin-top: var(--stndSpacing);
+    margin-bottom: var(--stndSpacing);
+    background-color: var(--crimsonRed);
+    padding: 8px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.udstyrBtn{
+    background-color: white;
+    padding: 6px 12px;
+}
+
+@media screen and (max-width:1050px) {
+    .udstyr{
+       display: block;
+    }
+   
+   }
+   /*entry point*/
+   .entryPointBælteContainer{
+    max-width: 400px;
+    height: 250px; 
+    margin: 4rem auto;
+}
+
+.entryPointBælte {
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/gradueringHeroDekstop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryPointBælte:hover {
+    transform: scale(1.1);
+}
+
+   /*støt klubben*/
+   .stoetKlubbenBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/stoetKlubbenHeroDesktop.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+   .støtKlubben{
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+   }
+
+   .støtKlubben div{
+    display: flex;
+    flex-direction: column;
+    max-width: 20vw;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d9d6d66c;
+    margin-top: 4rem;
+    border-radius: var(--borderRadius);
+
+   }
+
+   .støtKlubben p{
+    margin: 2rem 2rem;
+   }
+
+   .støtKlubben button{
+    background-color: var(--crimsonRed);
+    color: white;
+    max-width: 400px;
+    padding: 1.5rem 3.5rem;
+    font-size: large;
+    font-weight: 500;
+    margin: 2rem 2rem;
+    border: none;
+    border-radius: var(--borderRadius);
+    cursor: pointer;
+   }
+
+   @media screen and (max-width:1050px) {
+    .støtKlubben{
+       display: block;
+    }
+   .støtKlubben div{
+    max-width: none;
+   }
+   }
+   /*entry point*/
+   .entryPointOmKlubbenContainer{
+    max-width: 400px;
+    height: 250px; 
+    margin: 4rem auto;
+}
+
+.entryPointOmKlubben {
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/om-klubben.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryPointOmKlubben:hover {
+    transform: scale(1.1);
+}
+
+   /*begivenheder*/
+.begivenheder{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+    
+    
+}
+.begivenheder h3{
+    font-size: 1.5rem;
+   }
+.begivenheder div{
+display: flex;
+justify-content: center;
+
+flex-direction: column;
+align-items: center;
+margin-top: var(--largeSpacing);
+background-color: #d9d6d66c;
+border-radius: var(--borderRadius);
+
+}   
+.begivenheder p{
+    min-width: 400px;
+    padding: var(--largeSpacing) var(--largeSpacing);
+}
+@media screen and (max-width:1050px) {
+   .begivenheder p{
+    min-width: none;
+   }
+   
+   }
