@@ -1332,7 +1332,7 @@ label {
 .entryPointUdstyr {
     height: 100%;
     width: 100%;
-    background-image:linear-gradient( rgba(0, 0, 0, 0.586), rgba(0, 0, 0, 0.425)), url(../images/entryPoints/udstyrBtnDesktop.jpg);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.586), rgba(0, 0, 0, 0.425)), url(../images/udstyrHeroDesktop.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1450,7 +1450,7 @@ label {
 .entryPointBlivMedlem {
     height: 100%;
     width: 100%;
-    background-image:linear-gradient( rgba(0, 0, 0, 0.586), rgba(0, 0, 0, 0.425)), url(../images/entryPoints/EntryPointblivMedlem.jpg);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.586), rgba(0, 0, 0, 0.425)), url(../images/4blivMedlemHeroDesktop.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
