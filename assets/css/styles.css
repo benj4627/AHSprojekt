@@ -928,7 +928,7 @@ label {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 4rem;
+    padding-bottom: 5rem;
     padding-top: var(--largeSpacing);
 }
 
@@ -952,6 +952,23 @@ label {
     padding-right: 4em;
     font-weight: 700;
 }
+
+/* beskrivelser */
+
+.beskrivelseTekst p {
+    margin: var(--stndSpacing);
+}
+
+
+.beskrivelseTekst h3 {
+    font-size: 1.5rem;
+    margin: var(--stndSpacing);
+}
+
+.beskrivelseTekst {
+    margin: var(--largeSpacing);
+}
+
 
 /* entry point */
 .entryBlivMedlemContainer {
@@ -983,6 +1000,21 @@ label {
     color: var(--shojiWhite);
     font-weight: 800;
     font-size: 2rem;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    .tiderContainer {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+    }
+
+    .beskrivelseTekst {
+        max-width: 400px;
+    }
+
+    .heroTextContainer h1{
+        font-size: 3rem;
+    }
 }
 
 /* tider og hold slut */
