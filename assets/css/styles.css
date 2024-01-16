@@ -976,7 +976,7 @@ font-size: .8em;
 }
 
 .newsImg {
-    background-image:linear-gradient( rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.637)), url(../images/nyheder/1artikel.png);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.637)), url(../images/5artikel.png);
     height: 25vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -994,7 +994,7 @@ font-size: .8em;
 }
 
 .news2Img {
-    background-image:linear-gradient( rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.637)), url(../images/nyheder/2artikel.png);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.637)), url(../images/6artikel\ \(1\).png);
     height: 25vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -1007,7 +1007,7 @@ font-size: .8em;
 }
 
 .news3Img {
-    background-image:linear-gradient( rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.637)), url(../images/nyheder/3artikele.png);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.637)), url(../images/2artikele.png);
     height: 25vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -1020,7 +1020,7 @@ font-size: .8em;
 }
 
 .news4Img {
-    background-image:linear-gradient( rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.637)), url(../images/nyheder/4artikel.png);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.637)), url(../images/4artikel.png);
     height: 25vh;
     background-repeat: no-repeat;
     background-position: center;
