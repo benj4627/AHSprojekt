@@ -160,19 +160,24 @@ ul {
 }
 
 /* ashirhara benefits section */
-
-#ashiharaBenefits {
+#ashiharaBenefits,
+#ashiharaBenefits1, #ashiharaBenefits2, 
+#ashiharaBenefits3 {
 text-align: center;
 }
 
-#ashiharaBenefits p {
+#ashiharaBenefits p,
+#ashiharaBenefits1 p, #ashiharaBenefits2 p, 
+#ashiharaBenefits3 p {
 font-weight: 900;
 color: var(--primaryBlue);
 font-size: 1.5rem;
 
 }
 
-#ashiharaBenefits i {
+#ashiharaBenefits i,
+#ashiharaBenefits1 i, #ashiharaBenefits2 i, 
+#ashiharaBenefits3 i {
 color: var(--primaryBlue);
 font-size: 5.5rem;
 }
@@ -290,7 +295,7 @@ font-size: 5.5rem;
         grid-template-columns: 1fr 1fr;
         max-width: 950px;
         margin: 0 auto;
-    }
+    }   
 }
 @media screen and (min-width: 600px) {
     .forsideTextContainer2 {
@@ -442,14 +447,17 @@ summary {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
   }
   summary:after{
     content: "\002B";
     font-size: 2rem;
+    
   }
 
   details[open] summary:after{
     content: "\00D7";
+
   }
 
 /* Vedtægter side slut */
@@ -851,11 +859,6 @@ gap: var(--largeSpacing); */
    color: var(--shojiWhite);
 }
 
-/* footer .logo img {
-    width: 249px;
-    height: 100%;
-} */
-
 .logoWidth {
     width: 249px;
     height: 100%;
@@ -943,7 +946,7 @@ font-size: .8em;
 /* nyheder cards */
 .newsGridContainer {
     display: grid;
-    grid-gap: 5rem;
+    column-gap: 4rem;
     grid-template-columns: repeat(2, minmax(200px, 1fr));
     max-width: 1000px;
     margin: 0 auto;
@@ -1161,7 +1164,7 @@ font-size: .8em;
 }
 
 .etiketteIntro p {
-    max-width: 800px;
+    max-width: 60ch;
     margin: 0 auto;
     font-weight: 500;
     padding-bottom: var(--largeSpacing);
@@ -1169,28 +1172,20 @@ font-size: .8em;
 
 
 /* etikette punkter */
-.etikettePunkterHvid {
+.etikettePunkterHvid, .etikettePunkter {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     padding: var(--stndSpacing);
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 500px;
   }
 
   .fullWidth {
     background-color: white;
     max-width: 100vw;
   }
-  
-  .etikettePunkter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: var(--stndSpacing);
-    margin: 0 auto;
-    max-width: 800px;
-  }
+
   
   .num p {
     display: flex;
@@ -1225,6 +1220,13 @@ font-size: .8em;
 
     .punkt {
         max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .etiketteIntro p {
+        max-width: 250px;
+        margin: 0 auto;
+        text-align: left;
     }
 }
 
@@ -1320,6 +1322,7 @@ label {
 .blivMedlemBtn:hover {
     background-color: var(--crimsonLight);
     font-size: 93%;
+    cursor: pointer;
 }
 
 /* entry points udstyr */
@@ -1501,13 +1504,13 @@ label {
 }
 
 .gridContainerBestyrelse {
-
     display: grid;
     grid-gap: var(--largeSpacing);
     grid-template-columns: repeat(12, 1fr);
-justify-content: space-between;
+    justify-content: space-between;
     max-width: 1400px;
     margin: var(--stndSpacing) auto;
+    padding-top: 4rem;
 }
 #bestyrelsesJan{
     grid-column: span 4;
@@ -1528,6 +1531,7 @@ justify-content: space-between;
 @media screen and (max-width:1050px) {
  .gridContainerBestyrelse{
     display: block;
+    margin: 10%;
  }
 
 }
@@ -1546,10 +1550,12 @@ justify-content: space-between;
 .udstyr{
     display: grid;
     grid-gap: 4rem;
+    row-gap: unset;
     grid-template-columns: repeat(2, minmax(200px, 1fr));
-    max-width: 1400px;
-    margin: 20px 30vw;
+    max-width: 500px;
+    margin: 0 auto;
 }
+
 .udstyr p{
     margin: 1rem 2px;
 }
@@ -1560,7 +1566,12 @@ justify-content: space-between;
     justify-self: center;
     background-color: #d9d6d66c;
     margin-top: var(--largeSpacing);
+    border-radius: var(--borderRadius);
+    
+}
 
+.udstyr h3 {
+    padding-top: var(--stndSpacing);
 }
 .købBtn{
     margin-top: var(--stndSpacing);
@@ -1570,15 +1581,26 @@ justify-content: space-between;
     border: none;
     color: white;
     cursor: pointer;
+    border-radius: var(--borderRadius);
+    transition: .3s ease-in-out;
 }
+
+.købBtn:hover {
+    background-color: var(--crimsonLight);
+    font-size: 93%;
+}
+
 .udstyrBtn{
     background-color: white;
     padding: 6px 12px;
+    border: 1px solid black;
+    border-radius: var(--borderRadius);
 }
 
-@media screen and (max-width:1050px) {
+@media screen and (max-width:750px) {
     .udstyr{
-       display: block;
+       /* display: block; */
+       grid-template-columns: repeat(1, minmax(200px, 1fr));
     }
    
    }
@@ -1626,7 +1648,7 @@ justify-content: space-between;
    .støtKlubben div{
     display: flex;
     flex-direction: column;
-    max-width: 20vw;
+    max-width: 35vw;
     justify-content: space-between;
     align-items: center;
     background-color: #d9d6d66c;
@@ -1640,16 +1662,7 @@ justify-content: space-between;
    }
 
    .støtKlubben button{
-    background-color: var(--crimsonRed);
-    color: white;
-    max-width: 400px;
-    padding: 1.5rem 3.5rem;
-    font-size: large;
-    font-weight: 500;
     margin: 2rem 2rem;
-    border: none;
-    border-radius: var(--borderRadius);
-    cursor: pointer;
    }
 
    @media screen and (max-width:1050px) {
@@ -1670,7 +1683,7 @@ justify-content: space-between;
 .entryPointOmKlubben {
     height: 100%;
     width: 100%;
-    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/om-klubben.png);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/OmKlubbenHeader.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1691,30 +1704,79 @@ justify-content: space-between;
     display: flex;
     flex-direction: column;
   align-items: center;
-    
-    
 }
-.begivenheder h3{
+
+.begivenhederBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/begivenhederHeroDesktop.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.begivenheder h2 {
     font-size: 1.5rem;
-   }
-.begivenheder div{
-display: flex;
-justify-content: center;
-
-flex-direction: column;
-align-items: center;
-margin-top: var(--largeSpacing);
-background-color: #d9d6d66c;
-border-radius: var(--borderRadius);
-
-}   
-.begivenheder p{
-    min-width: 400px;
-    padding: var(--largeSpacing) var(--largeSpacing);
+    margin-top: var(--stndSpacing);
 }
+
+.begivenheder div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--largeSpacing);
+    background-color: #d9d6d66c;
+    border-radius: var(--borderRadius);
+}   
+
+#flexContainerBegivenheder {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: var(--largeSpacing);
+    text-align: center;
+}
+
+#flexContainerBegivenheder h2 {
+    margin-bottom: var(--stndSpacing);
+}
+
+#flexContainerBegivenheder div {
+    max-width: 30vw;
+}
+
+#flexContainerBegivenheder p {
+    padding: unset; 
+    margin-bottom: var(--stndSpacing);
+}
+
+.begivenheder p {
+    min-width: 400px;
+    padding: var(--stndSpacing);
+}
+
+.flexContainerBegivenheder h3 {
+    margin-top: var(--stndSpacing);
+}
+
 @media screen and (max-width:1050px) {
    .begivenheder p{
     min-width: none;
    }
+
+   #flexContainerBegivenheder {
+    flex-direction: column;
+    }
+
+    #flexContainerBegivenheder div {
+        min-width: 80vw;
+    }
+
+    .begivenheder {
+        max-width: 80vw;
+        margin: 0 auto;
+        padding: var(--stndSpacing);
+    }
    
-   }
+}
