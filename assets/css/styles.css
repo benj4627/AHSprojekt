@@ -6,10 +6,10 @@
  :root{
   --shojiWhite: #EEEDE8; 
   --crimsonRed: #E31E24; 
-  --crimsonLight: #EC575B;
+  --crimsonLight: #ec6f73;
   --primaryBlue: #23377F; 
   --sort: #292828;
-  --grey: #7A7A7A; 
+  --grey: #7a7a7aac; 
   --largeSpacing: 2rem;
   --stndSpacing: 1rem;
   --borderRadius: 10px; 
@@ -122,7 +122,6 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: var(--stndSpacing);
 }
 
 .menu a {
@@ -133,8 +132,15 @@ ul {
 .menu a:hover {
     background-color: #eeede8cc; 
     color: var(--sort);
-    height: 100%;
 }
+
+
+/* dropdown */
+.navItem {
+    display: flex;
+    align-items: center;
+    color: var(--shojiWhite);
+  }
 
 /* main section */
 
@@ -245,6 +251,39 @@ font-size: 5.5rem;
 
 
 
+  .dropdownNav1 {
+    display: none;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.716);
+    min-width: 15vw;
+    padding: .5rem;
+  }
+
+
+  .dropdownNav1 a {
+    padding: .8rem;
+    border-radius: var(--borderRadius);
+    font-size: 12px;
+  }
+
+  .dropdownNav1 li {
+    margin: .8rem;
+  }
+  
+  .navItem:hover .dropdownNav1 {
+    display: inline-flex; 
+    z-index: 2;
+    flex-direction: column;
+    position: absolute;
+    top: 8%;
+    border-radius: var(--borderRadius);
+  }
+
+  /* burger */
+  
+
+  /* burger slut */
+
 @media screen and (min-width: 900px) {
     .forsideEntryPoints {
         display: grid;
@@ -271,6 +310,7 @@ font-size: 5.5rem;
 }
 
 /* Sub nav */
+
 
 /* forside styles slut */
 
@@ -650,7 +690,7 @@ summary {
 .entryPointAshihara {
     height: 100%;
     width: 100%;
-    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/entryPoints/2omAshiharaDesktop.jpg);
+    background-image:linear-gradient( rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.158)), url(../images/entryPoints/EntryPointomAshiharaDesktop.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -852,6 +892,11 @@ font-size: .8em;
 
 .socials i {
   margin: 0 1rem;
+  transition: .3s ease-in-out;
+}
+
+.socials i:hover {
+    transform: scale(130%);
 }
 
 @media screen and (min-width:1050px) {
@@ -861,7 +906,7 @@ font-size: .8em;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-  }  
+  }
 
   .burgerMenu i {
     display: none;
@@ -882,3 +927,566 @@ font-size: .8em;
     }
 }
 
+
+/* nyheder start */
+/* header */
+.nyhederBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/nyhederDesktop.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* main */
+/* nyheder cards */
+.newsGridContainer {
+    display: grid;
+    grid-gap: 5rem;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.newsCardContainer {
+    max-width: 100%;
+    padding: var(--largeSpacing);
+    background-color: white;   
+    text-align: center;
+    border-radius: var(--borderRadius);
+    transition: .3s ease-in-out;
+    margin-top: 4rem;
+}
+
+.newsCardContainer:hover {
+    transform: scale(105%);
+}
+
+.newsText h3 {
+    margin: .5rem;
+    font-weight: 700;
+    color: var(--primaryBlue);
+}
+
+.newsText p {
+    margin: var(--stndSpacing);
+    font-size: .8rem;
+    color: var(--primaryBlue);
+}
+
+.newsImg {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.637)), url(../images/nyheder/1artikel.png);
+    height: 25vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.newsImgText p {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.news2Img {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.637)), url(../images/nyheder/2artikel.png);
+    height: 25vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.news3Img {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.637)), url(../images/nyheder/3artikele.png);
+    height: 25vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.news4Img {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.637)), url(../images/nyheder/4artikel.png);
+    height: 25vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* entrypoint */
+.entryTiderogHoldContainer {
+    max-width: 400px;
+    height: 250px; 
+    margin: 4rem auto;
+}
+
+.entryTiderogHold {
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.586), rgba(0, 0, 0, 0.425)), url(../images/moedinstruktorendeHeroDekstop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryTiderogHold:hover {
+    transform: scale(1.1);
+}
+
+.btnText {
+    color: var(--shojiWhite);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+/* media queries nyheder */
+@media screen and (max-width: 768px) {
+    .newsGridContainer {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        grid-gap: 2rem; 
+    }
+
+    .newsCardContainer {
+        margin-top: var(--stndSpacing);
+    }
+
+    .newsImg, .news2Img, .news3Img, .news4Img {
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width: 2208px) {
+    .newsGridContainer {
+        grid-template-columns: repeat(4, minmax(400px, 1fr));
+        max-width: 2400px;
+        margin: 0 auto;
+    }
+}
+/* nyheder slut */
+
+/* Værdier og etikette start */
+/* header */
+.etiketteBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/veardier-og-etikette.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* main */
+/* værdier section */
+.vaerdierContainer {
+    padding: 4rem;
+    max-width: 1100px;
+    margin: 2rem auto;
+    background-color: white;
+    border-radius: var(--borderRadius);
+}
+
+.listContainer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    place-items: center;
+    align-items: baseline;
+}
+
+.listContainer ul {
+    margin: .5rem 0;
+    padding-top: var(--largeSpacing);
+}
+
+.listContainer li {
+    margin-top: 1rem;
+    font-weight: 300;
+}
+
+.listContainer h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.listContainer i {
+    color: var(--primaryBlue);
+    margin-right: 1rem;
+    font-weight: 500;
+}
+
+#balance {
+    margin-bottom: 5rem;
+}
+
+.vaerdierContainer h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: var(--stndSpacing);
+}
+
+/* etikette section */
+.etiketteIntro {
+    text-align: center;
+}
+
+.etiketteIntro h2 {
+    font-size: 2rem;
+    margin-top: var(--largeSpacing);
+    margin-bottom: var(--stndSpacing);
+}
+
+.etiketteIntro p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight: 500;
+    padding-bottom: var(--largeSpacing);
+}
+
+
+/* etikette punkter */
+.etikettePunkterHvid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--stndSpacing);
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  .fullWidth {
+    background-color: white;
+    max-width: 100vw;
+  }
+  
+  .etikettePunkter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--stndSpacing);
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  .num p {
+    display: flex;
+    align-self: flex-start;
+    color: var(--primaryBlue);
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-right: 3rem;
+  }
+  
+  .punkt {
+    max-width: 600px;
+    text-align: left;
+  }
+
+
+  /* værdier media queries  */
+  @media screen and (max-width: 768px) {
+    .listContainer {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        grid-gap: unset; 
+    }
+
+    #balance {
+        margin: 0;
+    }
+
+    .num {
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+
+    .punkt {
+        max-width: 250px;
+    }
+}
+
+/* værdier og etikette slut */
+
+/* bliv medlem start */
+/* header styling */
+.blivMedlemBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/4blivMedlemHeroDesktop.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* main styling */
+/* tekst styling */
+.introText {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: var(--largeSpacing);
+}
+
+.introText p {
+    max-width: unset;
+    margin-top: var(--stndSpacing);
+    margin-bottom: var(--largeSpacing);
+}
+
+/* form syling */
+select {
+    border: unset;
+    text-align: left;
+    min-width: 50vw;
+    height: 3rem;
+    padding: 1rem; 
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+option {
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: .5rem; 
+    max-width: 50vw;
+    margin: 0 auto;
+}
+
+input {
+    margin-bottom: var(--stndSpacing);
+    border-radius: 3px;
+    border: unset;
+    text-align: left;
+    min-width: 50vw;
+    height: 3rem;
+    padding: 1rem;
+}
+
+label {
+    font-weight: 700;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+::placeholder {
+    font-style: italic;
+}
+
+/* rød button */
+.blivMedlemBtn {
+    color: white;
+    font-weight: 700;
+    background-color: var(--crimsonRed);
+    padding: 1rem 2rem;
+    min-width: 15vw;
+    max-width: 30vw;
+    margin: 0 auto;
+    border: unset;
+    border-radius: var(--borderRadius);
+    margin-top: var(--stndSpacing);
+    transition: .3s ease-in-out;
+}
+
+.blivMedlemBtn:hover {
+    background-color: var(--crimsonLight);
+    font-size: 93%;
+}
+
+/* entry points udstyr */
+.entryPointUdstyrContainer {
+    max-width: 400px;
+    height: 250px; 
+    margin: 4rem auto;
+}
+
+.entryPointUdstyr {
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.586), rgba(0, 0, 0, 0.425)), url(../images/entryPoints/udstyrBtnDesktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryPointUdstyr:hover {
+    transform: scale(1.1);
+}
+
+.btnText {
+    color: var(--shojiWhite);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    .introText {
+        max-width: 300px;
+        margin: 10%
+    }
+
+    .blivMedlemBackgroundImg h1 {
+        font-size: 10vw;
+    }
+}
+/* bliv medlem slut */
+
+/* tider og hold start */
+/* header */
+.tiderOgHoldBackgroundImg {
+    height: 90vh;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.384)), url(../images/forside/3traeningtider-og-hold-Desktop.jgp.jpg);
+    background-size: 90vh;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* træningstider sektion*/
+.tiderContainer {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    text-align: center;
+    align-items: baseline;
+}
+
+.tiderContainer h3 {
+    font-size: 1.8rem;
+    text-wrap: wrap;
+    margin: var(--stndSpacing);
+}
+
+.traeningsTiderHvid {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5rem;
+    padding-top: var(--largeSpacing);
+}
+
+.traeningsTider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.traeningsTiderHvid p, .traeningsTider p {
+    margin: var(--stndSpacing);
+}
+
+.tid {
+    display: flex;
+}
+
+.ugedag {
+    padding-right: 4em;
+    font-weight: 700;
+}
+
+/* beskrivelser */
+
+.beskrivelseTekst p {
+    margin: var(--stndSpacing);
+}
+
+
+.beskrivelseTekst h3 {
+    font-size: 1.5rem;
+    margin: var(--stndSpacing);
+}
+
+.beskrivelseTekst {
+    margin: var(--largeSpacing);
+}
+
+
+/* entry point */
+.entryBlivMedlemContainer {
+    max-width: 400px;
+    height: 250px; 
+    margin: 4rem auto;
+}
+
+.entryPointBlivMedlem {
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.586), rgba(0, 0, 0, 0.425)), url(../images/entryPoints/EntryPointblivMedlem.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--borderRadius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.entryPointBlivMedlem:hover {
+    transform: scale(1.1);
+}
+
+.btnText {
+    color: var(--shojiWhite);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    .beskrivelseTekst {
+        max-width: 400px;
+    }
+
+    .heroTextContainer h1{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .tiderContainer {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+    }
+}
+
+/* tider og hold slut */
