@@ -165,6 +165,11 @@ ul {
     border-radius: var(--borderRadius);
   }
 
+  /* burger */
+  
+
+  /* burger slut */
+
 
 /* instruktørene side */
 
@@ -1004,16 +1009,18 @@ label {
 
 /* media queries */
 @media screen and (max-width: 768px) {
-    .tiderContainer {
-        grid-template-columns: repeat(1, minmax(200px, 1fr));
-    }
-
     .beskrivelseTekst {
         max-width: 400px;
     }
 
     .heroTextContainer h1{
         font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .tiderContainer {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
     }
 }
 
